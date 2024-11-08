@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Chart } from 'primereact/chart';; // Assuming Chart is a simpler wrapper
+import { Chart } from 'primereact/chart';
 
 const PokemonStats = ({ pokemon }) => {
   const stats = pokemon.stats.map(stat => stat.base_stat);
@@ -29,6 +29,9 @@ const PokemonStats = ({ pokemon }) => {
     responsive: true,
     plugins: {
       legend: { position: 'top' },
+      labels: {
+        font: {color: 'gray', }, 
+      },
     },
   };
 
