@@ -1,18 +1,18 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { useParams ,  useNavigate } from 'react-router-dom'; // For dynamic routing
-import { Get_Pokemons_BY_Name } from '../../graphql/queries/PokemonQueries';
+import { Get_Pokemons_BY_ID } from '../../graphql/queries/PokemonQueries';
 import PokemonStats from '../../components/Pokemon/PokeStat';
 import { ProgressSpinner } from 'primereact/progressspinner';
 import PokemonCard from '../../components/Pokemon/PokemonCard';
 import Header from '../../components/Common/Header';
 import Footer from '../../components/Common/Footer';
 const Details = () => {
-  const { name } = useParams(); 
+  const { id } = useParams(); 
   const navigate = useNavigate();
 
-  const { loading, error, data } = useQuery(Get_Pokemons_BY_Name, {
-    variables: { name },
+  const { loading, error, data } = useQuery(Get_Pokemons_BY_ID, {
+    variables: { id },
   });
 
   if (loading) {
@@ -24,11 +24,7 @@ const Details = () => {
   }
 
   if (error) {
-    return (
-        <div className="flex justify-center items-center h-screen">
-          <ProgressSpinner aria-label="Loading" />
-        </div>
-      );
+    navigate("/Error"); return null ;
   }
 
   const pokemon = data?.pokemon; 

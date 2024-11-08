@@ -9,7 +9,7 @@ export const routes = [
     exact: true,
   },
   {
-    path: '/pokemon-details/:name',
+    path: '/pokemon-details/:id',
     element: <Details />,
   },
   {

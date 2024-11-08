@@ -3,7 +3,8 @@ import { gql } from '@apollo/client';
 export const GET_POKEMONS = gql`
   query GetPokemons {
     pokemons {
-      name
+    id 
+    name
       url
       types
       sprites {
@@ -23,10 +24,11 @@ export const GET_POKEMONS = gql`
   }
 `;
 
-export const Get_Pokemons_BY_Name = gql `
-query GetPokemonByName($name: String!) {
-  pokemon(name: $name) {
-    name
+export const Get_Pokemons_BY_ID = gql `
+query GetPokemonByName($id: ID!) {
+  pokemon(id: $id) {
+      id    
+      name
       url
       types
       sprites {

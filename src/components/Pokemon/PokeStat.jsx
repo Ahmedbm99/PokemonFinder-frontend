@@ -10,11 +10,11 @@ const PokemonStats = ({ pokemon }) => {
     labels: labels,
     datasets: [
       {
-        label: `${pokemon.name} Stats`,
+        label: `${pokemon.name} Statistic`,
         data: stats,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgba(255, 99, 132, 1)',
-        borderWidth: 1,
+        borderColor: 'rgba(255, 255, 255, 255)',
+        borderWidth: 2,
       },
     ],
   };
@@ -25,6 +25,7 @@ const PokemonStats = ({ pokemon }) => {
         beginAtZero: true,
       },
     },
+ 
     responsive: true,
     plugins: {
       legend: { position: 'top' },
