@@ -1,6 +1,6 @@
 # Frontend for PokemonFinder
 
-This is the frontend for [PokemenFinder], built using React 18.3.1, Tailwind CSS, and Prime Components. It provides an intuitive user interface for interacting with the backend GraphQL API.
+This is the frontend for PokemenFinder, built using React 18.3.1, Tailwind CSS, and Prime Components. It provides an intuitive user interface for interacting with the backend GraphQL API.
 
 ## Features
 
