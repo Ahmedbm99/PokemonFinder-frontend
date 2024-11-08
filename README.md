@@ -48,10 +48,4 @@ This will start the server on <http://localhost:3000>.
 
 ### Usage
 
-Once the server is running, you can access the frontend application and interact with the Pokémon data. You can:
-
-- Search Pokémon by name
-- Filter Pokémon by type
-- Sort Pokémon by stats
-- View details of each Pokémon by clicking on their card
-- Navigate between pages using pagination controls
+Once the server is running, you can access the frontend application and interact with the Pokémon data. 
