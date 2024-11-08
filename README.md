@@ -38,11 +38,11 @@ This is the frontend for PokemenFinder, built using React 18.3.1, Tailwind CSS, 
 
 3. Install dependencies:
 
-    npm install
+    npm install or yarn install
 
 4. Start the development server:
 
-    npm start
+    npm start 
 
 This will start the server on <http://localhost:3000>.
 
