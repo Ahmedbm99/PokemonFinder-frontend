@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { useParams ,  useNavigate } from 'react-router-dom'; // For dynamic routing
+import { useParams ,  useNavigate } from 'react-router-dom'; 
 import { Get_Pokemons_BY_ID } from '../../graphql/queries/PokemonQueries';
 import PokemonStats from '../../components/Pokemon/PokeStat';
 import { ProgressSpinner } from 'primereact/progressspinner';
